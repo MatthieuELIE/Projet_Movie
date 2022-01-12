@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Roboto:wght@400;700;900&display=swap');
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-bar-container{
+    display: flex;
+    background-color: #032541;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav-logo a{
+    color: #E7E7E7;
+    font-size: 4.2vw;
+    padding-left: 4.5vw;
+}
+
+.nav-menu ul{
+    display: flex;
+    padding-right: 4vw;
+    list-style: none;
+}
+
+.nav-menu ul li a{
+    color: #E7E7E7;
+    text-decoration: none;
+    font-size: 2vw;
+    padding: 0 20px;
+    font-weight: 400;
+}
+
+.nav-menu ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.search-bar-container{
+    background-image: url(./assets/interstellar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 23vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar{
+    display: flex;
+    background-color: #E7E7E7;
+    padding: 15px;
+    justify-content: space-between;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.search-input{
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    width: 80%;
+}
+
+.search-button{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+}
+
+.tendances-text{
+    display: flex;
+    align-items: center;
+    padding: 2vh 4vw 0 0;
+    flex-wrap: wrap;
+}
+
+.tendances-title{
+    padding: 1.3vh 5vw;
+    margin: 0 2.5vw 0 2.5vw;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    width: 211px;
+    height: 47px;
+}
+
+.tendances-container-btn{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin-left: 4.6vw;
+}
+
+.tendances-btn{
+    border: solid 2px #032541;
+    width: 150px;
+    height: 40px;
+    margin: 2vh 2vw 0 4.5vw;
+    padding: 5px 15px;  
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.container-movie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2.5vh;
+}
+
+.movie{
+    padding: 1.3vh 5vw;
+    position: relative;
+}
+
+.movie-text{
+    width: 221px;
+    height: 53px;
+    font-size: 18px;
+    line-height: 21px;
+    position: relative;
+}
+
+.movie-text h3{
+    color: #032541;
+    filter: drop-shadow(0 2px 1px rgba(3, 37, 65, 0.5));
+}
+
+.movie-text p{
+    filter: drop-shadow(0 2px 1px rgba(3, 37, 65, 0.5));
+}
+
+.movie-promo{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transform: translate(12em, -2.1em);
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    background: #032541;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.container-populaires{
+    background-color: #E7E7E7
+}
+
+.populaires-container-btn{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin-left: 4.6vw;
+}
+
+.tendances-btn:hover{
+    background-color: #032541;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.movie-img:hover{
+    filter: drop-shadow(10px 10px 5px rgba(3, 37, 65, 0.5));
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 480px){
+      .tendances-text{
+          justify-content: center;
+      }
+      .tendances-btn{
+          justify-content: center;
+      }
+}
